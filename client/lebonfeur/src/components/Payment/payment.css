@@ -1,0 +1,262 @@
+.container-payment {
+  padding: 20px;
+  background-color: #F6F7EB;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.container-payment .select-address {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.container-payment .button-account-modify {
+  background-color: #393E41;
+  border: 1px solid black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.container-payment .button-account-modify:hover {
+  background-color: #2f3235;
+}
+
+.delivery-options label {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.delivery-options input {
+  margin-right: 10px;
+}
+
+.input-pointer {
+  input {
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  input[type="radio"]:checked {
+    background-color: #000;
+  }
+
+  input[type="radio"]:not(:disabled):hover {
+    border-color: black;
+  }
+
+  input[type="radio"]::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #E94F37;
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.order-number {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.modal-content button {
+  background-color: #E94F37;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.modal-content button:hover {
+  background-color: #d4351d;
+}
+
+.closeModal {
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.for-button-final {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.user-buy-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.user-return-button {
+  background-color: #252525;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.user-buy-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.user-buy-button.enabled:hover {
+  background-color: #218838;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+}
+
+.showCards {
+  display: block;
+}
+
+.dontShowCards {
+  display: none;
+}
+
+.modalBox {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.marg-5 {
+  margin-bottom: 15px;
+}
+
+.container-payment input[type="text"], .container-payment input[type="email"], .container-payment input[type="tel"], .select-address, .container-payment input[type="month"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.container-payment input[type="text"]:disabled, .container-payment input[type="email"]:disabled, .container-payment input[type="tel"]:disabled, select:disabled, .container-payment input[type="month"]:disabled {
+  background-color: #f5f5f5;
+}
+
+label {
+  margin-right: 10px;
+  color: #555;
+}
+
+.container-payment .form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+@media (max-width: 406px) {
+  .for-button-final{
+    display: block;
+  }
+}

@@ -1,0 +1,17 @@
+.foot {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #353C40;
+    color: #E94F37;
+    text-align: center;
+    .logo{
+      display: flex;
+      h2 {
+        font-family: "Maven Pro";
+        font-weight: 900;
+      }
+    }
+  }
+  

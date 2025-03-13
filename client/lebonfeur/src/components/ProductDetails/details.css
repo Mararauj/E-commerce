@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Maven Pro";
+}
+
+body {
+    background-color: #F6F7EB;
+}
+
+.flex {
+    display: flex;
+}
+
+.border-left {
+    border-left: 1px solid black;
+}
+
+.mt-2 {
+    margin-top: 2%;
+}
+
+.mt-5 {
+    margin-top: 5%;
+}
+
+.ml-2 {
+    margin-left: 2%;
+}
+
+.ml-5 {
+    margin-left: 5%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.contain {
+    min-height: 100vh;
+    display: flex;
+    padding-bottom: 15vh;
+}
+
+.column {
+    width: 33.3%;
+    float: left;
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    h2 {
+        color: black;
+    }
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    white-space: normal;
+}
+
+small {
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+.text {
+    font-size: 15px;
+    text-indent: 1em;
+}
+
+.plusminus {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.comments {
+    padding: 2%;
+    overflow-y: scroll;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    word-wrap: break-word;
+    max-width: 240px;
+    margin: 2%;
+    border: 1px solid black;
+    background: #fff;
+    border-radius: 40px;
+    padding-top: 2%;
+    padding: 20px;
+    color: #000;
+}
+
+.comment-form {
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+    button {
+        background-color: #393E41;
+        margin: 3px 0px;
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid black;
+        color: white;
+    }
+}
+
+.editbuttons {
+    span {
+        font-size: 20px;
+    }
+}
+
+.Photo {
+    width: 60%;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 2%;
+}
+
+.secondary img {
+    width: 100%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+.Products {
+    width: 20vw;
+    height: 60vh;
+    padding-left: 5%;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.similarproduct {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: #f5f5f5;
+    flex-direction: column;
+    padding: 2%;
+    width: 55%;
+    border: 1px solid black;
+    text-align: center;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+.buy {
+    background-color: #393E41;
+    margin: 3px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.buy:active {
+    filter: brightness(85%);
+}
+
+@media (min-width:1440px) {
+    .comment {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 550px) {
+    .contain {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: unset;
+        float: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column:first-child {
+        order: 1;
+    }
+
+    .border-left {
+        border-top: 1px solid black;
+        border-left: unset;
+    }
+
+    .ml-5 {
+        margin-right: 5%;
+    }
+
+    .Products {
+        width: unset;
+        height: unset;
+    }
+
+    .comment-form {
+        width: unset;
+    }
+}
+
+.link-no-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-no-underline img {
+    border: none;
+}
+
+.textcomment {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    border: solid 1px black;
+    background: #fff;
+}
+
+.textcomment:focus {
+    outline: none !important;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.star {
+    font-size: 3vh;
+    transition: color 0.2s;
+}
+
+.star2 {
+    font-size: 2vh;
+    transition: color 0.2s;
+}
+
+.filled {
+    color: gold;
+}
+
+
+.half {
+    color: lightgray;
+    position: relative;
+}
+
+.half::before {
+    content: '★';
+    color: gold;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.unfilled {
+    color: lightgray;
+}
+
+.score {
+    margin-left: 10px;
+}
+
+.Promo {
+    color: #E94F37;
+}

@@ -1,0 +1,61 @@
+.support-medium{
+  text-align: center;
+}
+
+.support-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.support-contactInfo {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+.support-faq {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+.support-faqBox {
+  margin-bottom: 15px;
+}
+
+.support-supportForm {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+.support-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.support-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.support-button {
+  background-color: #e74c3c ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.support-buttonHover {
+  background-color: #c0392b;
+}
